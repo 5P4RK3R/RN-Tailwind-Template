@@ -3,6 +3,7 @@ import {
     TextInput,
     Text,
     View,
+    StyleSheet,
     TouchableOpacity
   } from 'react-native';
 import UserInput from './Widgets/UserInput';
@@ -19,7 +20,6 @@ const Login = () => {
   // useEffect(()=>{ // trigger events after render
   //   dispatch(fetchAuth(showId))
   //   return () => {} // clean/ unsubscribe the events and avoid memory leaks
-   
   // },[dispatch,auth]) 
     return (
         <View style={tw`h-full`}>
@@ -46,3 +46,9 @@ const Login = () => {
     )
 }
 export default Login;
+
+const styles = StyleSheet.create({
+  InputContainer:{
+    
+  }
+});
